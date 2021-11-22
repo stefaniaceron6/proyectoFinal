@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    android:orientation="vertical"
+    tools:context=".modificarProductos">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Registro de Productos"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            app:endIconMode="clear_text"
+            android:gravity="center"
+            app:boxBackgroundMode="outline"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/id_pro"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+
+                android:hint="Ingrese el ID">
+
+            </EditText>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="5dp">
+
+        </Space>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            app:endIconMode="clear_text"
+            android:gravity="center"
+            app:boxBackgroundMode="outline"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/nom_pro"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+
+                android:hint="Ingrese el nombre">
+
+            </EditText>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="5dp">
+
+        </Space>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            app:endIconMode="clear_text"
+            android:gravity="center"
+            app:boxBackgroundMode="outline"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/des_pro"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+
+                android:hint="Ingrese la descripcion">
+
+            </EditText>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="5dp">
+
+        </Space>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            app:endIconMode="clear_text"
+            android:gravity="center"
+            app:boxBackgroundMode="outline"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/stock_pro"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+
+                android:hint="Ingrese el Stock">
+
+            </EditText>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="5dp">
+
+        </Space>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            app:endIconMode="clear_text"
+            android:gravity="center"
+            app:boxBackgroundMode="outline"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/pre_pro"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+
+                android:hint="Ingrese el Precio">
+
+            </EditText>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="5dp">
+
+        </Space>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            app:endIconMode="clear_text"
+            android:gravity="center"
+            app:boxBackgroundMode="outline"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/med_pro"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+
+                android:hint="Ingrese Unidad de Medida">
+
+            </EditText>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+        <Spinner
+            android:id="@+id/estado_pro"
+            style="@style/Widget.AppCompat.DropDownItem.Spinner"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:spinnerMode="dropdown" >
+        </Spinner>
+
+        <Spinner
+            android:id="@+id/list_cat"
+            style="@style/Widget.AppCompat.DropDownItem.Spinner"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:spinnerMode="dropdown" >
+        </Spinner>
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/updateP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Actualizar">
+
+
+        </Button>
+
+        <Space
+            android:layout_width="50dp"
+            android:layout_height="wrap_content">
+
+        </Space>
+
+        <Button
+            android:id="@+id/deleteP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="eliminar">
+
+        </Button>
+
+    </LinearLayout>
+
+
+</LinearLayout>
